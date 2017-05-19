@@ -1,0 +1,36 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="default" extends="struts-default">
+    <!-- Login -->
+        <action name="Login" method="execute" class="Actions.Actions">
+            <result name="administrador" >Administrador.jsp</result>
+            <result name="alumno" >Alumno.jsp</result>
+            <result name="profesor" >Profesor.jsp</result>
+            <result name="input" >login.jsp</result>
+        </action>
+    <!-- Listar Usuario -->
+        <action name="view" method="execute" class="Actions.AddAction">
+            <result name="success" >listado.jsp</result>
+        </action>
+    <!-- Borrar -->
+        <action name="delete" method="borrar" class="Actions.AddAction">
+            <result name="success" >outBorrado.jsp</result>
+        </action>
+    <!-- Insertar -->
+        <action name="Insertar" method="insetar" class="Actions.AddAction">
+            <result name="success" >outInsertar.jsp</result>
+        </action>
+     <!-- Modificar -->
+         <action name="upuser" method="execute" class="Actions.upser">
+            <result name="success" >editar.jsp</result>
+        </action>
+        <action name="actualizar" method="execute" class="Actions.up">
+            <result name="success" >Administrador.jsp</result>
+        </action>
+    </package>
+    
+</struts>
