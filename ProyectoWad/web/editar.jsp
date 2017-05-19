@@ -1,9 +1,3 @@
-<%-- 
-    Document   : InsetarUser
-    Created on : 12/05/2017, 03:28:24 PM
-    Author     : Enrique
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib  uri="/struts-tags" prefix="s" %>
 
@@ -32,7 +26,7 @@
                     
                     <s:textfield name="nombre" key="User:" /> 
                     <s:textfield name="password" key="password:" />      
-                    <s:textfield name="correo" key="Correo:" /> 
+                    <s:textfield name="correo" key="Email:" /> 
                     <s:textfield name="tipoUsr" key="tipo de  usuario:" />  
                     <s:submit value="Actualizar" />
                     <s:actionmessage  />
