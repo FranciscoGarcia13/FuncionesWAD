@@ -21,7 +21,7 @@
             
             <s:form action = "Login" id="loginForm" method="post">
             <s:textfield name="nombre" key="Usuario"/>
-            <s:password name ="password" key="Password"/>
+            <s:password name ="pass" key="Password"/>
             <s:submit value="Login" />
             <s:actionerror  />
                <!-- <fieldset id="login">

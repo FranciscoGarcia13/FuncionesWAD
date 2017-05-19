@@ -63,35 +63,35 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>Login</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"estilo.css\">\n");
-      out.write("        <meta charset=\"UTF-8\">\n");
-      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <div class=\"container\">\n");
-      out.write("            \n");
-      out.write("            <div id=\"icons\">\t\n");
-      out.write("                <div id=\"IPN\" class=\"logo\"> <img src=\"images/ipnLogo.png\">  </div>\n");
-      out.write("                <div id=\"Escom\" class=\"logo\"> <img src=\"images/escomLogo.png\">  </div> \n");
-      out.write("                <h1> Generador de Funciones </h1>\n");
-      out.write("                <h2> Web Aplication Development </h2> \n");
-      out.write("            </div>\n");
-      out.write("            <label class=\"control-label\">Iniciar Sesion </label>\n");
-      out.write("            \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>Login</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"estilo.css\">\r\n");
+      out.write("        <meta charset=\"UTF-8\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("            \r\n");
+      out.write("            <div id=\"icons\">\t\r\n");
+      out.write("                <div id=\"IPN\" class=\"logo\"> <img src=\"images/ipnLogo.png\">  </div>\r\n");
+      out.write("                <div id=\"Escom\" class=\"logo\"> <img src=\"images/escomLogo.png\">  </div> \r\n");
+      out.write("                <h1> Generador de Funciones </h1>\r\n");
+      out.write("                <h2> Web Aplication Development </h2> \r\n");
+      out.write("            </div>\r\n");
+      out.write("            <label class=\"control-label\">Iniciar Sesion </label>\r\n");
+      out.write("            \r\n");
       out.write("            ");
       if (_jspx_meth_s_form_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("         \n");
-      out.write("        </div> \n");
-      out.write("        \n");
-      out.write("    </body>\n");
+      out.write("\r\n");
+      out.write("         \r\n");
+      out.write("        </div> \r\n");
+      out.write("        \r\n");
+      out.write("    </body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -125,49 +125,49 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_s_form_0.doInitBody();
       }
       do {
-        out.write("\n");
+        out.write("\r\n");
         out.write("            ");
         if (_jspx_meth_s_textfield_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
-        out.write("\n");
+        out.write("\r\n");
         out.write("            ");
         if (_jspx_meth_s_password_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
-        out.write("\n");
+        out.write("\r\n");
         out.write("            ");
         if (_jspx_meth_s_submit_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
-        out.write("\n");
+        out.write("\r\n");
         out.write("            ");
         if (_jspx_meth_s_actionerror_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
-        out.write("\n");
-        out.write("               <!-- <fieldset id=\"login\">\n");
-        out.write("\n");
-        out.write("                    <div class=\"formu\">\n");
-        out.write("                        <label for=\"username\" class=\"control-label\">Usuario: </label>\n");
-        out.write("                        <input type=\"text\" class=\"in\"  name=\"nombre\" placeholder=\"Tu usuario\" pattern=\"[a-zA-Z]+[0-9a-zA-Z]{1,25}\" required/>\n");
-        out.write("                    </div>\n");
-        out.write("\n");
-        out.write("                    <div class=\"formu\">\n");
-        out.write("                        <label for=\"password\" class=\"control-label\">Password: </label>\n");
-        out.write("                        <input type=\"password\" class=\"in\" name=\"password\" placeholder=\"Tu password\"  pattern=\"[a-zA-Z_0-9]{4,20}\" required/>\n");
-        out.write("                    </div>\n");
-        out.write("\n");
-        out.write("                    <div class=\"formu\" id=\"sel\">\n");
-        out.write("                        <label class=\"control-label\">Tipo de usuario: </label>\n");
-        out.write("                        <select class=\"selectpicker\" name=\"tipoUser\" required/>\n");
-        out.write("                            <option>Alumno</option>\n");
-        out.write("                            <option>Profesor</option>\n");
-        out.write("                            <option>Administrador</option>\n");
-        out.write("                        </select>\n");
-        out.write("                    </div>\n");
-        out.write("\n");
-        out.write("                    <div class=\"formu\" id=\"btnIngresar\">\t\t\t\t\t\t\n");
-        out.write("                        <input type=\"submit\" name=\"ingreso\" class=\"boton\" value=\"Ingresar\"> \n");
-        out.write("\n");
-        out.write("                    </div>\n");
-        out.write("                </fieldset> -->\n");
+        out.write("\r\n");
+        out.write("               <!-- <fieldset id=\"login\">\r\n");
+        out.write("\r\n");
+        out.write("                    <div class=\"formu\">\r\n");
+        out.write("                        <label for=\"username\" class=\"control-label\">Usuario: </label>\r\n");
+        out.write("                        <input type=\"text\" class=\"in\"  name=\"nombre\" placeholder=\"Tu usuario\" pattern=\"[a-zA-Z]+[0-9a-zA-Z]{1,25}\" required/>\r\n");
+        out.write("                    </div>\r\n");
+        out.write("\r\n");
+        out.write("                    <div class=\"formu\">\r\n");
+        out.write("                        <label for=\"password\" class=\"control-label\">Password: </label>\r\n");
+        out.write("                        <input type=\"password\" class=\"in\" name=\"password\" placeholder=\"Tu password\"  pattern=\"[a-zA-Z_0-9]{4,20}\" required/>\r\n");
+        out.write("                    </div>\r\n");
+        out.write("\r\n");
+        out.write("                    <div class=\"formu\" id=\"sel\">\r\n");
+        out.write("                        <label class=\"control-label\">Tipo de usuario: </label>\r\n");
+        out.write("                        <select class=\"selectpicker\" name=\"tipoUser\" required/>\r\n");
+        out.write("                            <option>Alumno</option>\r\n");
+        out.write("                            <option>Profesor</option>\r\n");
+        out.write("                            <option>Administrador</option>\r\n");
+        out.write("                        </select>\r\n");
+        out.write("                    </div>\r\n");
+        out.write("\r\n");
+        out.write("                    <div class=\"formu\" id=\"btnIngresar\">\t\t\t\t\t\t\r\n");
+        out.write("                        <input type=\"submit\" name=\"ingreso\" class=\"boton\" value=\"Ingresar\"> \r\n");
+        out.write("\r\n");
+        out.write("                    </div>\r\n");
+        out.write("                </fieldset> -->\r\n");
         out.write("            ");
         int evalDoAfterBody = _jspx_th_s_form_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -211,7 +211,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.ui.PasswordTag _jspx_th_s_password_0 = (org.apache.struts2.views.jsp.ui.PasswordTag) _jspx_tagPool_s_password_name_key_nobody.get(org.apache.struts2.views.jsp.ui.PasswordTag.class);
     _jspx_th_s_password_0.setPageContext(_jspx_page_context);
     _jspx_th_s_password_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_password_0.setName("password");
+    _jspx_th_s_password_0.setName("pass");
     _jspx_th_s_password_0.setKey("Password");
     int _jspx_eval_s_password_0 = _jspx_th_s_password_0.doStartTag();
     if (_jspx_th_s_password_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

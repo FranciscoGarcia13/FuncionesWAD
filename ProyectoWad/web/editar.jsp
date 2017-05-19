@@ -28,7 +28,8 @@
                 <label class="control-label">Editar Usuario </label>
                 <s:iterator value="result">
                 <s:form action="actualizar" >
-                    <s:textfield name="idUsr" key="id:"/>
+                    <s:textfield name="idUsr" key="id:" readonly="true"/> 
+                    
                     <s:textfield name="nombre" key="User:" /> 
                     <s:textfield name="password" key="password:" />      
                     <s:textfield name="correo" key="Correo:" /> 

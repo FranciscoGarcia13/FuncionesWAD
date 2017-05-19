@@ -8,15 +8,15 @@ import org.hibernate.Session;
 
 public class Actions extends ActionSupport {
     
-    String nombre, password, tipoUsr;
+    String nombre, pass, tipoUsr;
     Session hibernateSession;
     Usuario login;
     
-    public String getPassword() {
-        return password;
+    public String getPass() {
+        return pass;
     }
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPass(String password) {
+        this.pass = password;
     }
     public String getNombre() {
         return nombre;
@@ -39,8 +39,8 @@ public class Actions extends ActionSupport {
     hibernateSession.beginTransaction();
     System.out.println("session get");
      
-    if(nombre!=null && password!=null &&(!nombre.equals(""))&&(!password.equals(""))){
-         login=(Usuario) hibernateSession.createQuery("from Usuario where nombre='"+nombre+"'AND password='"+password+"'").uniqueResult();
+    if(nombre!=null && pass!=null &&(!nombre.equals(""))&&(!pass.equals(""))){
+         login=(Usuario) hibernateSession.createQuery("from Usuario where nombre='"+nombre+"'AND password='"+pass+"'").uniqueResult();
     }
     else{
         addActionError("Registro no encontrado");
@@ -48,7 +48,7 @@ public class Actions extends ActionSupport {
     }
     if(login!=null){
         addActionMessage("Welcome");
-        tipoUsr = (String) hibernateSession.createQuery("select tipoUsr from Usuario where nombre='"+nombre+"' AND password='"+password+"'").uniqueResult();
+        tipoUsr = (String) hibernateSession.createQuery("select tipoUsr from Usuario where nombre='"+nombre+"' AND password='"+pass+"'").uniqueResult();
         //tipoUsr = "Administrador";
         switch (tipoUsr) {
             case "Administrador":
