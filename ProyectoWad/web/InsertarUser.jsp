@@ -22,10 +22,11 @@
                 <label class="control-label">Agregar Nuevo Usuario </label>
                 <s:form action="Insertar" >
                     <%--<s:textfield name="idUsr" key="id:" /> --%>
-                    <s:textfield name="nombre" key="User:" /> 
-                    <s:textfield name="password" key="password:" />      
-                    <s:textfield name="correo" key="Correo:" /> 
-                    <s:textfield name="tipoUsr" key="tipo de  usuario:" />  
+                    <s:textfield name="nombre" key="User " /> 
+                    <s:textfield name="password" key="Password " />      
+                    <s:textfield name="correo" key="Correo " /> 
+                    <s:combobox name="tipoUsr" key="Tipo de usuario " headerKey="1" headerValue="--- Selecione tipo ---"
+                                list="{'Alumno','Profesor','Administrador'}"  />
                     <s:submit value="Insertar" />
                     <s:actionmessage  />
                 </s:form>
