@@ -2,4 +2,8 @@ Esto lo hice yo kike
 ---------------------------------------
 Esta linea la hice yo
 ------------------------------------
+<<<<<<< HEAD
 kike modifique 12:01 am 31/05/2017
+=======
+kike modifique 11:33 pm 30/05/2017
+>>>>>>> 322f66064fa08653151c1016e9a29e74eea38192
