@@ -15,7 +15,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_actionmessage_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_form_action;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_textfield_name_key_nobody;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -28,7 +28,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_tagPool_s_actionmessage_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_form_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_textfield_name_key_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
@@ -36,7 +36,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_tagPool_s_actionmessage_nobody.release();
     _jspx_tagPool_s_form_action.release();
     _jspx_tagPool_s_textfield_name_key_nobody.release();
-    _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody.release();
+    _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -144,7 +144,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
           return true;
         out.write(" \r\n");
         out.write("                    ");
-        if (_jspx_meth_s_combobox_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
+        if (_jspx_meth_s_select_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
         out.write("\r\n");
         out.write("                    ");
@@ -180,7 +180,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_th_s_textfield_0.setPageContext(_jspx_page_context);
     _jspx_th_s_textfield_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
     _jspx_th_s_textfield_0.setName("nombre");
-    _jspx_th_s_textfield_0.setKey("User ");
+    _jspx_th_s_textfield_0.setKey("User: ");
     int _jspx_eval_s_textfield_0 = _jspx_th_s_textfield_0.doStartTag();
     if (_jspx_th_s_textfield_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_textfield_name_key_nobody.reuse(_jspx_th_s_textfield_0);
@@ -199,7 +199,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_th_s_textfield_1.setPageContext(_jspx_page_context);
     _jspx_th_s_textfield_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
     _jspx_th_s_textfield_1.setName("password");
-    _jspx_th_s_textfield_1.setKey("Password ");
+    _jspx_th_s_textfield_1.setKey("Password: ");
     int _jspx_eval_s_textfield_1 = _jspx_th_s_textfield_1.doStartTag();
     if (_jspx_th_s_textfield_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_textfield_name_key_nobody.reuse(_jspx_th_s_textfield_1);
@@ -218,7 +218,7 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_th_s_textfield_2.setPageContext(_jspx_page_context);
     _jspx_th_s_textfield_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
     _jspx_th_s_textfield_2.setName("correo");
-    _jspx_th_s_textfield_2.setKey("Correo ");
+    _jspx_th_s_textfield_2.setKey("Correo: ");
     int _jspx_eval_s_textfield_2 = _jspx_th_s_textfield_2.doStartTag();
     if (_jspx_th_s_textfield_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_textfield_name_key_nobody.reuse(_jspx_th_s_textfield_2);
@@ -228,25 +228,25 @@ public final class InsertarUser_jsp extends org.apache.jasper.runtime.HttpJspBas
     return false;
   }
 
-  private boolean _jspx_meth_s_combobox_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_select_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  s:combobox
-    org.apache.struts2.views.jsp.ui.ComboBoxTag _jspx_th_s_combobox_0 = (org.apache.struts2.views.jsp.ui.ComboBoxTag) _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody.get(org.apache.struts2.views.jsp.ui.ComboBoxTag.class);
-    _jspx_th_s_combobox_0.setPageContext(_jspx_page_context);
-    _jspx_th_s_combobox_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_combobox_0.setName("tipoUsr");
-    _jspx_th_s_combobox_0.setKey("Tipo de usuario ");
-    _jspx_th_s_combobox_0.setHeaderKey("1");
-    _jspx_th_s_combobox_0.setHeaderValue("--- Selec Tipo de User ---");
-    _jspx_th_s_combobox_0.setList("{'Alumno','Profesor','Administrador'}");
-    int _jspx_eval_s_combobox_0 = _jspx_th_s_combobox_0.doStartTag();
-    if (_jspx_th_s_combobox_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody.reuse(_jspx_th_s_combobox_0);
+    //  s:select
+    org.apache.struts2.views.jsp.ui.SelectTag _jspx_th_s_select_0 = (org.apache.struts2.views.jsp.ui.SelectTag) _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody.get(org.apache.struts2.views.jsp.ui.SelectTag.class);
+    _jspx_th_s_select_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_select_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
+    _jspx_th_s_select_0.setName("tipoUsr");
+    _jspx_th_s_select_0.setKey("Tipo de usuario ");
+    _jspx_th_s_select_0.setHeaderKey("1");
+    _jspx_th_s_select_0.setHeaderValue("--- Selec Tipo de User ---");
+    _jspx_th_s_select_0.setList("{'Alumno','Profesor','Administrador'}");
+    int _jspx_eval_s_select_0 = _jspx_th_s_select_0.doStartTag();
+    if (_jspx_th_s_select_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody.reuse(_jspx_th_s_select_0);
       return true;
     }
-    _jspx_tagPool_s_combobox_name_list_key_headerValue_headerKey_nobody.reuse(_jspx_th_s_combobox_0);
+    _jspx_tagPool_s_select_name_list_key_headerValue_headerKey_nobody.reuse(_jspx_th_s_select_0);
     return false;
   }
 

@@ -27,7 +27,7 @@
                     <s:textfield name="nombre" key="User" /> 
                     <s:textfield name="password" key="password" />      
                     <s:textfield name="correo" key="Email" /> 
-                    <s:combobox name="tipoUsr" key="Tipo de usuario " headerKey="1" headerValue="--- Selec Tipo de User ---"
+                    <s:select name="tipoUsr" key="Tipo de usuario " headerKey="1" headerValue="--- Selec Tipo de User ---"
                                 list="{'Alumno','Profesor','Administrador'}"  />  
                     <s:submit value="Actualizar" />
                     <s:actionmessage  />
